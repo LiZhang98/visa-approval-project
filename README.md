@@ -17,3 +17,9 @@ visa approval project
    ```bash
    pip install -r requirements.txt
    ```
+
+### export the envirounment vairalbe
+
+```bash
+export MONGODB_URL_KEY = "mongodb://localhost:27017/"
+```
