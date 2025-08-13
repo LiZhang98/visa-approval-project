@@ -1,9 +1,5 @@
-from visa_approval.logger import logging
-from visa_approval.exception import USvisaException
-import sys
-logging.info("Logger initialized successfully.")
+from visa_approval.pipline.training_pipeline import TrainPipeline
 
-try:
-    1 / 0
-except Exception as e:
-    raise USvisaException(e, sys)
+obj = TrainPipeline()
+obj.run_pipeline()
+
