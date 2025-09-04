@@ -31,4 +31,8 @@ visa approval project
 
 ```bash
 export MONGODB_URL_KEY = "mongodb://localhost:27017/"
+
+export AWS_ACCESS_KEY_ID_ENV_KEY=
+export AWS_SECRET_ACCESS_KEY_ENV_KEY=
+
 ```

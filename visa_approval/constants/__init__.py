@@ -20,6 +20,14 @@ TARGET_COLUMN = "case_status"
 CURRENT_YEAR = date.today().year
 PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
+
+
+AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID_ENV_KEY"
+AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY_ENV_KEY"
+REGION_NAME = "eu-central-1"
+
+
+
 '''
 Data ingestion related constants start with DATA_INGESTION VAR NAME
 '''
@@ -56,3 +64,11 @@ MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
 MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
+
+
+'''
+Model Evaluation related constants start with MODEL_EVALUATION VAR NAME
+'''
+MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
+MODEL_BUCKET_NAME = "visa-approval-model"
+MODEL_PUSHER_S3_KEY = "model-registry"
